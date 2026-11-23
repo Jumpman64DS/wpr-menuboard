@@ -110,7 +110,7 @@
       "slides": [
         {
           "file": "slides/lunch-2024-12-23.jpg",
-          "seconds": 10
+          "seconds": 20
         }
       ]
     },
@@ -119,7 +119,7 @@
       "slides": [
         {
           "file": "slides/dinner-2024-12-23.jpg",
-          "seconds": 10
+          "seconds": 20
         }
       ]
     },
@@ -128,7 +128,7 @@
       "slides": [
         {
           "file": "slides/weekend-2024-12-23.jpg",
-          "seconds": 10
+          "seconds": 20
         }
       ]
     },
@@ -137,7 +137,7 @@
       "slides": [
         {
           "file": "slides/holiday-2024-12-23.jpg",
-          "seconds": 10
+          "seconds": 20
         }
       ]
     },
@@ -174,7 +174,6 @@
     { "file": "ads/easter.jpg", "enabled": false },
     { "file": "ads/fz-rewards-explain.jpg" },
     { "file": "ads/salad-bar.jpg" },
-    { "file": "ads/free-cookie-20.jpg" },
     { "file": "ads/fathers-day-2.jpg", "start": "06-01", "end": "06-21" },
     { "file": "ads/now-hiring.jpg" },
     { "file": "ads/fz-fun-for-all.jpg" },
