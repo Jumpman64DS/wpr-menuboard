@@ -42,8 +42,7 @@ SEASONAL / MANAGED ADS (currently in the list)
   Football (Fan Favorite, Game Day)            ON  - check monthly
   Basketball For the Win         ON  - check monthly
   Volleyball Dig our Buffet      ON  - check monthly
-  Parked (OFF, old/dated): Santa '24 Wentzville, Black Friday 2024 Raydiant,
-                           Buffet Day Raydiant (unclear what it is for - Joel to confirm)
+  Parked (OFF, old/dated): Buffet Day Raydiant (unclear what it is for - Joel to confirm)
   Everything else in the list is on all year, including Locally Owned Wentzville, the Community
   Impact promo and video, the Buffet video, Wing Nite 1 and 2, FZ ads, Now Hiring and the gift card ad.
 
