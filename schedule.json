@@ -15,7 +15,7 @@
   ],
   "rules": [
     {
-      "name": "Menu Sun-Thu",
+      "name": "Closing Sun-Thu",
       "days": [
         7,
         1,
@@ -25,16 +25,16 @@
       ],
       "from": "20:25",
       "to": "21:00",
-      "deck": "menu"
+      "deck": "closing"
     },
     {
-      "name": "Menu Fri",
+      "name": "Closing Fri",
       "days": [
         5
       ],
-      "from": "20:25",
-      "to": "23:00",
-      "deck": "menu"
+      "from": "20:55",
+      "to": "21:30",
+      "deck": "closing"
     },
     {
       "name": "Menu Sat",
@@ -144,6 +144,15 @@
     },
     "menu": {
       "ads": false,
+      "slides": [
+        {
+          "file": "slides/menu-2025-02-13.jpg",
+          "seconds": 30
+        }
+      ]
+    },
+    "closing": {
+      "ads": true,
       "slides": [
         {
           "file": "slides/menu-2025-02-13.jpg",
