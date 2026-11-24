@@ -1,0 +1,173 @@
+{
+  "adSeconds": 10,
+  "adEvery": 1,
+  "menuInRotation": {"file": "slides/menu-2025-02-13.jpg", "everyNthAd": 6, "seconds": 10},
+  "refreshMinutes": 5,
+  "outsideWindows": "blank",
+  "store": "cpr",
+  "holidays": [
+    {
+      "date": "2027-01-01",
+      "name": "New Year's Day",
+      "from": "10:00",
+      "to": "22:00",
+      "deck": "marketing"
+    }
+  ],
+  "rules": [
+    {
+      "name": "Closing Sun-Thu",
+      "days": [7, 1, 2, 3, 4],
+      "from": "20:25",
+      "to": "21:00",
+      "deck": "closing"
+    },
+    {
+      "name": "Closing Fri",
+      "days": [5],
+      "from": "20:55",
+      "to": "21:30",
+      "deck": "closing"
+    },
+    {
+      "name": "Menu Sat",
+      "days": [6],
+      "from": "20:55",
+      "to": "21:30",
+      "deck": "menu"
+    },
+    {
+      "name": "Dinner Mon-Wed",
+      "days": [1, 2, 3],
+      "from": "16:00",
+      "to": "20:25",
+      "deck": "marketing"
+    },
+    {
+      "name": "Lunch Mon-Fri",
+      "days": [1, 2, 3, 4, 5],
+      "from": "09:00",
+      "to": "16:00",
+      "deck": "marketing"
+    },
+    {
+      "name": "Weekend Sat-Sun",
+      "days": [6, 7],
+      "from": "09:00",
+      "to": "20:55",
+      "deck": "marketing"
+    },
+    {
+      "name": "Weekend Thu & Fri nights",
+      "days": [4, 5],
+      "from": "16:00",
+      "to": "20:55",
+      "deck": "marketing"
+    },
+    {
+      "name": "Non-Open Times",
+      "days": [1, 2, 3, 4, 5, 6, 7],
+      "from": "21:00",
+      "to": "22:30",
+      "deck": "nonopen"
+    }
+  ],
+  "decks": {
+    "marketing": {
+      "adsOnly": true,
+      "ads": true,
+      "slides": [
+      ]
+    },
+    "closing": {
+      "ads": true,
+      "slides": [
+          { "file": "slides/menu-2025-02-13.jpg", "seconds": 30 }
+        ]
+    },
+    "menu": {
+      "ads": false,
+      "slides": [
+          { "file": "slides/menu-2025-02-13.jpg", "seconds": 30 }
+        ]
+    },
+    "nonopen": {
+      "ads": true,
+      "slides": [
+          { "file": "slides/menu-2025-02-13.jpg", "seconds": 30 }
+        ]
+    }
+  },
+  "ads": [
+      { "file": "ads/fz-birthday-package-1.jpg", "stores": ["wpr"] },
+      { "file": "ads/stuffed-crust-pull.jpg" },
+      { "file": "ads/christmas.jpg", "start": "11-27", "end": "12-25" },
+      { "file": "ads/wing-nite-1.jpg" },
+      { "file": "ads/locally-owned-wentzville.jpg", "stores": ["wpr"] },
+      { "file": "ads/fz-check-it-out-group.jpg", "stores": ["wpr"] },
+      { "file": "ads/gift-cards-tis-the-season.jpg", "start": "11-27", "end": "12-24" },
+      { "file": "ads/wings-with-sauces-2.jpg" },
+      { "file": "ads/kids-day-tuesday.jpg" },
+      { "file": "ads/buffet-something-for-everyone-video.webm" },
+      { "file": "ads/easter.jpg", "enabled": false },
+      { "file": "ads/fz-rewards-explain.jpg", "stores": ["wpr"] },
+      { "file": "ads/salad-bar.jpg" },
+      { "file": "ads/fathers-day-2.jpg", "start": "06-01", "end": "06-21" },
+      { "file": "ads/now-hiring.jpg" },
+      { "file": "ads/fz-fun-for-all.jpg", "stores": ["wpr"] },
+      { "file": "ads/pizza-and-chicken.jpg" },
+      { "file": "ads/july-4th.jpg", "start": "06-25", "end": "07-04" },
+      { "file": "ads/senior-happy-hour-2025.jpg" },
+      { "file": "ads/community-impact-night-promo.jpg" },
+      { "file": "ads/fz-good-times.jpg", "stores": ["wpr"] },
+      { "file": "ads/baseball-always-a-hit.jpg", "enabled": false },
+      { "file": "ads/breadsticks.jpg" },
+      { "file": "ads/ranch-rewards-app-go-cardless.jpg" },
+      { "file": "ads/baseball-grand-slam-savings.jpg", "enabled": false },
+      { "file": "ads/pasta-youre-gonna-love-it.jpg" },
+      { "file": "ads/wing-nite-2.jpg" },
+      { "file": "ads/community-impact-fundraising-video.webm" },
+      { "file": "ads/football-fan-favorite.jpg" },
+      { "file": "ads/fz-check-it-out.jpg", "stores": ["wpr"] },
+      { "file": "ads/delivery.jpg" },
+      { "file": "ads/football-game-day.jpg" },
+      { "file": "ads/mission-and-vision.jpg" },
+      { "file": "ads/welcome-to-the-ranch.jpg" },
+      { "file": "ads/basketball-for-the-win.jpg" },
+      { "file": "ads/catering.jpg" },
+      { "file": "ads/wristband-info-screen-5-sec.jpg", "stores": ["wpr"], "seconds": 5 },
+      { "file": "ads/funzone-rewards-1.jpg", "stores": ["wpr"] },
+      { "file": "ads/volleyball-dig-our-buffet.jpg" },
+      { "file": "ads/bake-at-home-2-for-13-99.jpg" },
+      { "file": "ads/gift-cards-perfect-gift.jpg" },
+      { "file": "ads/stuffed-crust.jpg" },
+      { "file": "ads/party-room.jpg" },
+      { "file": "ads/funzone-rewards-2.jpg", "stores": ["wpr"] },
+      { "file": "ads/gluten-options.jpg" },
+      { "file": "ads/catering-why-bother-cooking.jpg" },
+      { "file": "ads/fz-logo.jpg", "stores": ["wpr"] },
+      { "file": "ads/buffet-day-raydiant.jpg", "enabled": false },
+      { "file": "ads/theres-so-much-to-love.jpg" },
+      { "file": "ads/coffee-ranch-roast-program.jpg" },
+      { "file": "ads/catering-2.jpg" },
+      { "file": "ads/catering-logo.jpg" },
+      { "file": "ads/dont-feel-like-cooking-3.jpg" },
+      { "file": "ads/feed-the-team.jpg" },
+      { "file": "ads/rough-day-4.jpg" },
+      { "file": "ads/family-time-2.jpg" },
+      { "file": "ads/gift-cards.jpg" },
+      { "file": "ads/detonate.jpg", "stores": ["cpr"] },
+      { "file": "ads/fz-spongebob-dynamic-duo.jpg", "stores": ["cpr"] },
+      { "file": "ads/fz-rilix-coaster.jpg", "stores": ["cpr"] },
+      { "file": "ads/locally-owned-cottleville.jpg", "stores": ["cpr"] },
+      { "file": "ads/fz-rewards-1.jpg", "stores": ["cpr"] },
+      { "file": "ads/fz-rewards-2.jpg", "stores": ["cpr"] },
+      { "file": "ads/fz-birthday-packages.jpg", "stores": ["cpr"] },
+      { "file": "ads/fz-check-it-out-cottleville.jpg", "stores": ["cpr"] },
+      { "file": "ads/fz-check-it-out-group-pic.jpg", "stores": ["cpr"] },
+      { "file": "ads/fz-good-times-cottleville.jpg", "stores": ["cpr"] },
+      { "file": "ads/fz-logo-cottleville.jpg", "stores": ["cpr"] },
+      { "file": "ads/fz-rewards-explain-cottleville.jpg", "stores": ["cpr"] },
+      { "file": "ads/wristband-info-screen-cottleville.jpg", "stores": ["cpr"], "seconds": 5 }
+    ]
+}

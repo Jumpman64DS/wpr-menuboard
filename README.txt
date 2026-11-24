@@ -6,7 +6,8 @@ Hosted on GitHub Pages; the TV just opens the site address. Images/videos come f
 
 WHAT PLAYS WHEN (same order and times as the Wentzville Displai playlist; the first match wins)
   1. Holiday dates (list in schedule.json), 10:00-22:00  -> holiday prices
-  2. Menu full-board image (30s, no ads): Sun-Thu 8:25-9:00 PM, Fri 8:25-11:00 PM, Sat 8:55-9:30 PM
+  2. Closing: Sun-Thu 8:25-9:00 PM and Fri 8:55-9:30 PM show the full menu for 30 s, then one 10 s ad, and repeat.
+     Saturday 8:55-9:30 PM is the menu only (no ads).
   3. Dinner Mon-Wed 4:00-8:25 PM
   4. Lunch Mon-Fri 9:00 AM-4:00 PM
   5. Weekend Sat-Sun 9:00 AM-8:55 PM
@@ -30,6 +31,8 @@ AD ON/OFF AND DATE WINDOWS (all optional, per ad line in the "ads" list)
                             TV's own date. A window may wrap over New Year (e.g. "12-15" to "01-05").
                             Give both start and end, or neither.
   "seconds": 5              overrides the length for that ad (the Wristband ad uses 5).
+  "stores": ["wpr"]         optional. Leave it off and both stores play the ad.
+                            ["wpr"] is the Wentzville TV only. ["cpr"] is the Cottleville TV only.
   Example: { "file": "ads/christmas.jpg", "start": "11-27", "end": "12-25" }
 
 SEASONAL / MANAGED ADS (currently in the list)
@@ -72,13 +75,35 @@ TESTING THE SCHEDULE (no TV needed)
   Local:  python3 -m http.server 8080  in this folder, then http://localhost:8080/
   Fake the time: ?test=YYYY-MM-DDTHH:MM   e.g. ?test=2027-01-01T12:00    (add &speed=30 to run 30x faster)
   On the real site: https://jumpman64ds.github.io/wpr-menuboard/?test=2027-01-01T12:00&speed=30
+  Cottleville: https://jumpman64ds.github.io/wpr-menuboard/cpr/?test=2027-01-01T12:00&speed=30
   Add &debug=1 (test mode shows it automatically) for the green box with the simulated time and deck.
 
 TV COMPATIBILITY
-  Plain old-style JavaScript, no libraries; the picture scales to fill any screen size (pictures that
-  are not 16:9 are fitted with black bars, never stretched).
+  Plain old-style JavaScript, no libraries; the picture scales to fill any screen size. Stills are
+  cropped to 16:9 and fill the frame. Videos play in the frame.
   The offline cache (sw.js) is optional. The page remembers the last good schedule.json and reloads at ~4 AM.
   It must be served from a web address (http/https), not opened as a file.
 
 FILE NAMES: library files were renamed to lowercase-with-hyphens (e.g. "Wing Nite 1.jpg" -> ads/wing-nite-1.jpg).
-Pictures are JPEG (about q88 or the original).
+Pictures are JPEG (about q88 or the original). Stills are cropped to 16:9 and fill the screen.
+
+COTTLEVILLE MARKETING TV (CPR)
+  Ads only, no price slides. The TV opens https://jumpman64ds.github.io/wpr-menuboard/cpr/
+  Same hours as Wentzville, and the same player (player.js). Its schedule is cpr/schedule.json.
+  Main hours, every day 9:00 AM until that day's closing window: shared ads plus Cottleville-only ads,
+  10 s each (the Cottleville wristband is 5 s; videos play to the end). The dine-in menu replaces every
+  6th ad for 10 s. Closing windows match Wentzville (menu 30 s, then one ad; Saturday close is menu only).
+  After closing until 10:30 PM is the non-open deck (menu plus ads). Blank outside those windows.
+  Holidays and ad date windows work the same way. On a holiday the Cottleville screen stays on ads.
+  The ad list is kept in BOTH schedule.json and cpr/schedule.json. Add a new ad line to both.
+  The "stores" field decides which TV plays it.
+
+STORE-ONLY ADS
+  No "stores" field: both TVs. That includes the new shared ads Catering 2, Catering Logo,
+  Don't Feel Like Cooking 3, Feed the Team, Rough Day 4, Family Time 2, and Gift Cards.
+  Wentzville only ["wpr"]: the FunZone / FZ ads that were already on this board, the Wentzville
+  Wristband Info Screen, and Locally Owned Wentzville.
+  Cottleville only ["cpr"]: Detonate, FZ Spongebob Dynamic Duo, FZ Rilix Coaster, Locally Owned Cottleville,
+  FZ Rewards 1, FZ Rewards 2, FZ Birthday Packages, FZ Check it Out, FZ Check it Out Group Pic,
+  FZ Good Times, FZ Logo, FZ Rewards Explain, and the Cottleville Wristband Info Screen (5 s).
+  Senior Discount 2025 was not added. It is the same picture as Senior Happy Hour 2025, which both TVs play.
